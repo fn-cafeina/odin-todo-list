@@ -1,3 +1,3 @@
-# Webpack Template
+# Odin Todo List
 
-Weback template mainly used for TOP projects.
+Simple and minimalist Todo List App.
