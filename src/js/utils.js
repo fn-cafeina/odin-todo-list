@@ -1,5 +1,5 @@
-export function cleanNode(node) {
-  while (node.firstChild) {
-    node.removeChild(node.firstChild);
+export function cleanContainer(container) {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
   }
 }
