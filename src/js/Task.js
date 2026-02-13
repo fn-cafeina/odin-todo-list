@@ -3,5 +3,11 @@ export default class Task {
     this.title = title;
     this.description = description;
     this.dueDate = dueDate;
+
+    this.completed = false;
+  }
+
+  toggleCompleted() {
+    this.completed = !this.completed;
   }
 }
