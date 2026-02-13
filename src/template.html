@@ -6,6 +6,39 @@
     <title>Odin Todo List</title>
   </head>
   <body>
+    <dialog>
+      <form>
+        <div>
+          <label for="task-title"></label>
+          <input id="task-title" type="text" placeholder="Add title" />
+        </div>
+        <div>
+          <label for="task-duedate"></label>
+          <input id="task-duedate" type="datetime-local" />
+        </div>
+        <div>
+          <label for="task-allday-option">All day</label>
+          <input id="task-allday-option" type="checkbox" />
+        </div>
+        <div>
+          <label for="task-description"></label>
+          <textarea
+            id="task-description"
+            placeholder="Add description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="task-list"></label>
+          <select id="task-list">
+            <option value="default" selected>Default</option>
+            <option value="list-1">List 1</option>
+          </select>
+        </div>
+        <div>
+          <button>Save</button>
+        </div>
+      </form>
+    </dialog>
     <div class="sidebar">
       <button class="create-task-btn">Create</button>
       <p>Lists</p>
