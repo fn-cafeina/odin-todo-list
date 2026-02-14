@@ -4,6 +4,7 @@ export default class List {
 
     this.tasks = [];
     this.default = "NODEFAULT";
+    this.selected = false;
   }
 
   addTask(task) {
