@@ -3,5 +3,6 @@ export default class List {
     this.name = name;
 
     this.tasks = [];
+    this.default = "NODEFAULT";
   }
 }
