@@ -5,4 +5,8 @@ export default class List {
     this.tasks = [];
     this.default = "NODEFAULT";
   }
+
+  addTask(task) {
+    this.tasks.push(task);
+  }
 }
