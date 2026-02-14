@@ -1,11 +1,16 @@
 import "./styles.css";
 
-const dialog = document.querySelector("dialog");
-const createTaskBtn = document.querySelector(".create-task-btn");
-const closeDialogBtn = document.querySelector(".close-dialog-btn");
+const taskDialog = document.querySelector(".task-dialog");
+const dialogCreateTaskBtn = document.querySelector(".dialog-create-task-btn");
+const listDialog = document.querySelector(".list-dialog");
+const dialogCreateListBtn = document.querySelector(".dialog-create-list-btn");
+const closeListDialogBtn = document.querySelector(".close-list-dialog-btn");
+const closeTaskDialogBtn = document.querySelector(".close-task-dialog-btn");
 
-createTaskBtn.onclick = () => dialog.showModal();
-closeDialogBtn.onclick = () => dialog.close();
+dialogCreateTaskBtn.onclick = () => taskDialog.showModal();
+dialogCreateListBtn.onclick = () => listDialog.showModal();
+closeListDialogBtn.onclick = () => listDialog.close();
+closeTaskDialogBtn.onclick = () => taskDialog.close();
 
 const taskAlldayOption = document.querySelector("#task-allday-option");
 const taskDuedate = document.querySelector("#task-duedate");
