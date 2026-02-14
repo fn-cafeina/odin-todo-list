@@ -10,4 +10,8 @@ export default class List {
   addTask(task) {
     this.tasks.push(task);
   }
+
+  toggleSelected() {
+    this.selected = !this.selected;
+  }
 }
