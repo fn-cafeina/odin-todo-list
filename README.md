@@ -1,4 +1,5 @@
 # Odin Todo List
 
-# Description
+## Description
+
 Simple and minimalist Todo List App.
