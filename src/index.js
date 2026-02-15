@@ -1,5 +1,14 @@
 import "./styles.css";
 
+import lists from "./js/lists.js";
+import List from "./js/List.js";
+
+const defaultList = new List("Default");
+defaultList.default = "DEFAULT";
+defaultList.selected = true;
+
+lists.push(defaultList);
+
 const taskDialog = document.querySelector(".task-dialog");
 const dialogCreateTaskBtn = document.querySelector(".dialog-create-task-btn");
 const listDialog = document.querySelector(".list-dialog");
