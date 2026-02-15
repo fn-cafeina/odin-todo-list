@@ -1,29 +1,17 @@
 @import "minireset.css";
 
-body {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  min-width: 100vw;
-  min-height: 100dvh;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
-}
+@import "./css/base/base.css";
+@import "./css/base/variables.css";
 
-.sidebar {
-  border-right: 1px solid #000;
-}
+@import "./css/layouts/sidebar.css";
+@import "./css/layouts/projects.css";
+@import "./css/layouts/todos.css";
+@import "./css/layouts/main.css";
 
-.sidebar,
-.main {
-  padding: 10px;
-}
+@import "./css/modules/project.css";
+@import "./css/modules/logo-icon.css";
+@import "./css/modules/button.css";
+@import "./css/modules/todo.css";
+
+@import "./css/states/project.css";
+@import "./css/states/todo.css";

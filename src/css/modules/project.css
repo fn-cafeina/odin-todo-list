@@ -1,0 +1,15 @@
+#project {
+  display: flex;
+  padding: 6px;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+#project:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#project > p {
+  pointer-events: none;
+}

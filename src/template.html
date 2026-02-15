@@ -3,62 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Odin Todo List</title>
+    <title>Todo List</title>
   </head>
   <body>
-    <dialog class="task-dialog">
+    <div id="l-sidebar">
+      <div class="logo-icon">
+        <img src="icons/logo-icon.svg" alt="Logo Icon" />
+        <p>Todo List</p>
+      </div>
+      <hr />
+      <div id="l-projects">
+        <p>Projects</p>
+        <div id="projects"></div>
+      </div>
+      <button type="button" id="sidebar-add-project-btn" class="button">
+        Add project
+      </button>
+    </div>
+    <div id="l-main">
+      <div id="l-todos">
+        <div id="todos"></div>
+      </div>
+      <button type="button" id="main-add-todo-btn" class="button">
+        Add todo
+      </button>
+    </div>
+    <dialog id="project-dialog">
       <form>
         <div>
-          <label for="task-title"></label>
-          <input id="task-title" type="text" placeholder="Add title" />
+          <label for="project-title">Project title:</label>
+          <input type="text" id="project-title" />
         </div>
         <div>
-          <label for="task-duedate"></label>
-          <input id="task-duedate" type="datetime-local" />
-        </div>
-        <div>
-          <label for="task-allday-option">All day</label>
-          <input id="task-allday-option" type="checkbox" />
-        </div>
-        <div>
-          <label for="task-description"></label>
-          <textarea
-            id="task-description"
-            placeholder="Add description"
-          ></textarea>
-        </div>
-        <div>
-          <label for="task-list"></label>
-          <select id="task-list"></select>
-        </div>
-        <div>
-          <button class="save-task-btn" type="button">Save</button>
-          <button type="button" class="close-task-dialog-btn">Cancel</button>
+          <button type="button" id="add-project-btn" class="button">
+            Accept
+          </button>
+          <button type="button" id="add-project-btn-cancel" class="button">
+            Cancel
+          </button>
         </div>
       </form>
     </dialog>
-    <dialog class="list-dialog">
+    <dialog id="todo-dialog">
       <form>
-        <p>Create new list</p>
         <div>
-          <label for="list-name"></label>
-          <input type="text" id="list-name" />
+          <label for="todo-title">Todo title:</label>
+          <input type="text" id="todo-title" />
         </div>
         <div>
-          <button class="save-list-btn" type="button">Save</button>
-          <button type="button" class="close-list-dialog-btn">Cancel</button>
+          <label for="todo-priority">Todo priority:</label>
+          <select id="todo-priority">
+            <option value="0">High</option>
+            <option value="1" selected>Normal</option>
+            <option value="2">Low</option>
+          </select>
+        </div>
+        <div>
+          <label for="todo-duedate">Todo duedate:</label>
+          <input type="date" id="todo-duedate" />
+        </div>
+        <div>
+          <button type="button" id="add-todo-btn" class="button">Accept</button>
+          <button type="button" id="add-todo-btn-cancel" class="button">
+            Cancel
+          </button>
         </div>
       </form>
     </dialog>
-    <div class="sidebar">
-      <button class="dialog-create-task-btn">Create</button>
-      <p>Lists</p>
-      <div class="lists"></div>
-      <button type="button" class="dialog-create-list-btn">Create list</button>
-    </div>
-    <div class="main">
-      <span class="selected-list-name">List</span>
-      <div class="tasks"></div>
-    </div>
   </body>
 </html>
